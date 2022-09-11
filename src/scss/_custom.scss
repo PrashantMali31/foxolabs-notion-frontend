@@ -1,0 +1,49 @@
+// Here you can add other styles
+/* common styles */
+a{
+    text-decoration: none
+}
+
+/*  sidebar*/
+.sidebarItem{
+    cursor:pointer;
+    margin-bottom: 10px;
+    display: flex; 
+    padding:15px 0; 
+     padding-left: 10px; 
+    align-items: center;
+    &:hover{
+background-color: #d3d3d3;
+    }
+    p{
+        margin: 0;
+    }
+}
+%hidden{
+    display: none !important;
+}
+.hidden{
+    @extend %hidden;
+}
+.dynamicTableBox{
+
+    table{
+        th,td{
+            padding:16px;
+        }
+    }
+}
+
+/* admin table */
+.adminTableIconbox{
+    align-items: center;
+    height: 100%;
+}
+.cursor-pointer{
+    cursor:pointer;
+}
+.adminTableIconbox > span svg.icon:not(.icon-c-s):not(.icon-custom-size),.adminTableIcon{
+cursor: pointer;
+    width:1.2rem;
+    height:1.2rem;
+}
